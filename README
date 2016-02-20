@@ -1,0 +1,19 @@
+To compile the program open a terminal and navigate to the directory which contains the tarball the source code, then type in the following:
+
+tar -xvf ca.tar
+cd ca
+make
+./ca
+
+To be able to compile the program under linux requires the opengl, freeglut and readline libraries. The readline library is used for the command interface and should be available on most popular linux distributions. 
+To be able to monitor the simulation, the opengl and freeglut libraries are used to render grafics. In order to determine if opengl is installed type 'glxinfo | grep version' in a terminal. 
+The output show something similar to the following lines:
+
+server glx version string: 1.2
+client glx version string: 1.4
+GLX version: 1.2
+OpenGL version string: 1.4 Mesa 7.6
+
+In case the libraries are not installed, these can be downloaded at http://freeglut.sourceforge.net/ and www.opengl.org.
+
+Guy Dirkzwager
